@@ -1,0 +1,1251 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color:#101317;
+    --text-color:#ffffff;
+    --name-color:yellow;
+    --list-draw:orangered;
+}
+
+.wrapper{
+    font-family: "Kanit", sans-serif;
+    font-weight: 520;
+    font-style: normal;
+    min-height: 100vh;
+
+}
+
+/* ----------NAVBAR---------- */
+
+nav{
+    background-color: #101317;
+    height:60px ;
+    color: var(--text-color);
+    display: flex;
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    margin-left: 30vw;
+    justify-content: space-between;
+    gap: 75px;
+    padding-top: 15px;
+    
+}
+
+
+nav li{
+    font-size: larger;
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+nav li::before {
+    content: "";
+    position: absolute;
+    background-color:var(--list-draw);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0); 
+    transition: transform .35s ease; 
+}
+
+nav li:hover::before {
+    transform: scaleX(1); 
+    
+}
+
+
+
+nav img{
+    height: 59px;
+    margin-left: 40px;
+}
+
+a{
+    text-decoration: none;
+    color:var(--text-color);
+}
+
+.hamburger{
+    display: none;
+}
+
+/* ----------HAKKIMDA---------- */
+
+
+
+#ana-1{
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    padding-top: 75px;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+#ana-1 span{
+    color: var(--list-draw);
+}
+
+#ana-1 div{
+    
+    width: 50%;
+    padding-left: 55px;
+}
+
+#anaresim {
+    width: 400px;
+    margin-left: 14%;
+}
+
+#ana-2{
+    background-color: var(--bg-color);
+    color:var(--text-color);
+    padding-bottom: 85px;
+}
+
+#ana-2 h1{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#ana-2 p{
+    margin-left:25%;
+    margin-right: 25%;
+    padding-bottom: 25px;
+    font-size: larger;
+}
+
+#ana-3{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding-bottom: 35px;
+    padding-top: 55px;
+}
+
+#ana-3 h1{
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+#ana-3 .grid{
+    margin-left: 55px;
+    margin-right: 55px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,375px);
+    gap: 32px;
+}
+
+.grid div{
+    text-align: center;
+}
+
+.grid img{
+    width: 80px;
+    height: 75px;
+}
+/* ----------FOOTER---------- */
+
+footer{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding-top: 35px;
+}
+
+footer h3{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+footer img{
+    width: 375px;
+    height: 80px;
+    margin-left: 35.5%;
+    margin-bottom: 20px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 35px;
+    padding-top: 25px;
+}
+.footer-list li{
+    font-size: xx-large;
+    list-style-type: none;
+}
+
+
+/* ------- GITHUB PROJECTS ------ */
+
+#ana-4{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding-bottom: 65px;
+    padding-top: 55px;
+}
+
+#ana-4 h1{
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(4,270px);
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    gap:35px;
+    margin-top: 25px;
+    padding-bottom: 25px;
+}
+
+.grid-2 div{
+    text-align: center;
+
+
+}
+
+
+.grid-2 button{
+    border: none;
+    background-color: transparent;
+    color: var(--list-draw);
+    font-size: larger;
+    width: 155px;
+    height: 35px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+.grid-2 h3{
+    margin-bottom: 20px;
+}
+
+.grid-2 button:hover{
+    color: white;
+    transition: 0.5s ease-in;
+    /* transform: rotateX(-100%); */
+    background-color: var(--list-draw);
+}
+
+#ana-4 h2{
+    float: right;
+    margin-right: 50px;
+}
+
+#ana-4 h2:hover{
+    color: var(--list-draw);
+    cursor: pointer;
+}
+
+
+.grid-2 div{
+    box-shadow: -27px -19px 15px -3px rgba(190, 172, 172, 0.5);
+}
+
+::-webkit-scrollbar{
+    background-color: gray;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--list-draw);
+    border-radius: 7px;
+}
+
+
+/* ----- FOOTER İÇİN RESPONSIVE DESIGN SETTINGS ----- */
+
+@media (width:360px){
+    #ana-1{
+        width: 100%;
+    }
+}
+
+@media (max-width:430px){
+
+    #ana-1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #ana-1 div{
+        width: 100%;
+        /* border: none; */
+    }
+
+    #ana-1 .yazı{
+        padding: 0;
+        padding-left: 7px;
+        padding-right: 7px;
+        text-align: center;
+    }
+
+   
+
+    #ana-1 img{
+        width: 275px;
+        height: 270px;
+        /* padding-right: 25px; */
+        border: none;
+        padding-right: 25%;
+        
+    }
+
+
+
+
+    footer{
+        width: 100%;
+    }
+
+    footer ul li{
+        font-size: larger;
+        
+    }
+
+    footer img{
+        width: 285px;
+        height: 90px;
+        margin-left: 16%;
+    }
+
+   /* #ana-2{
+    background-color:var();
+   } */
+
+   #ana-2 p{
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+   }
+
+   #ana-3{
+    width: 100%;
+   }
+
+
+   
+
+   #ana-3 .grid{
+    display:flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+   }
+
+   .hamburger{
+    display: block;
+    margin-left: auto;
+    font-size: xx-large;
+    margin-right: 7px;
+    margin-top: 5px;
+   }
+
+   nav img{
+    margin:  0;
+   }
+
+   
+
+   nav ul{
+    display: none;
+    background-color: var(--bg-color);
+    border: 1px solid orangered;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 60px;
+    height: 90%;
+    margin: 0;
+    padding: 0;
+    animation: hamburger 0.26s ease-in-out ;
+   
+
+    
+    
+   }
+
+   @keyframes hamburger {
+    from {
+      transform: translateY(-100%);
+      
+    }
+    to {
+      transform: translateY(0);
+      
+    }
+  }
+
+   nav .navbar.active {
+    left: 0;
+    display: flex;
+    flex-direction: column;
+
+   
+    
+    
+   }
+
+   nav ul li{
+    font-size: larger;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-left: 10%;
+   }
+
+   .grid-2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding-top: 20px;
+   }
+
+   .grid-2 h3{
+    font-size: x-large;
+   }
+
+   
+}
+
+@media (width:540px){
+    footer img{
+        margin: 0;
+        margin-left: 17%;
+    }
+
+    #ana-2 p{
+        margin: 0;
+        margin-left: 10%;
+        margin-right: 10%;
+       }
+
+    #ana-3{
+        width: 100%;
+       }
+
+    #ana-3 .grid{
+        grid-template-columns: repeat(2,auto);
+        padding: 0;
+        gap: 25px;
+    }
+
+    nav img{
+        padding-left: 25px;
+     }  
+
+       
+     .hamburger{
+        display: block;
+        margin-left: auto;
+        font-size: xx-large;
+        margin-right: 7px;
+        margin-top: 5px;
+       }
+    
+       nav img{
+        margin:  0;
+       }
+    
+       
+    
+       nav ul{
+        display: none;
+        background-color: var(--bg-color);
+        border: 1px solid orangered;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        height: 92%;
+        margin: 0;
+        padding: 0;
+        animation: hamburger 0.26s ease-in-out ;
+       
+    
+        
+        
+       }
+    
+     @keyframes hamburger {
+        from {
+          transform: translateY(-100%);
+          
+        }
+        to {
+          transform: translateY(0);
+          
+        }
+      }
+    
+    nav .navbar.active {
+        left: 0;
+        display: flex;
+        flex-direction: column;
+     
+    }
+
+    nav ul li{
+        font-size: xx-large;
+        margin-bottom: 50px;
+        margin-top: 25px;
+        margin-left: 7%;
+    }
+
+    #ana-1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+    #ana-1 div{
+        width: 100%;
+        /* border: none; */
+    }
+
+    #ana-1 .yazı{
+        padding: 0;
+        padding-left: 7px;
+        padding-right: 7px;
+        text-align: center;
+    }
+
+   
+
+    #ana-1 img{
+        width: 410px;
+        height: 350px;
+        /* padding-right: 25px; */
+        border: none;
+        padding-right: 25%;
+        
+    }
+
+    .grid-2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding-top: 20px;
+       }
+    
+    .grid-2 h3{
+        font-size: xx-large;
+       }
+
+    .grid-2 span{
+        font-size: x-large;
+       }
+}
+
+@media (width:768px){
+
+    nav img{
+        padding-left: 20px;
+     }  
+
+    footer img{
+        margin-left: 27.5%;
+    }
+
+    #ana-3{
+        width: 100%;
+       }
+
+    #ana-3 .grid{
+        grid-template-columns: repeat(2,auto);
+        padding: 0;
+        gap: 25px;
+    }
+
+    .hamburger{
+        display: block;
+        margin-left: auto;
+        font-size: xx-large;
+        margin-right: 7px;
+        margin-top: 5px;
+       }
+    
+       nav img{
+        margin:  0;
+       }
+    
+       
+    
+       nav ul{
+        display: none;
+        background-color: var(--bg-color);
+        border: 1px solid orangered;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        height: 90%;
+        margin: 0;
+        padding: 0;
+        animation: hamburger 0.26s ease-in-out ;
+       
+    
+        
+        
+       }
+    
+       @keyframes hamburger {
+        from {
+          transform: translateY(-100%);
+          
+        }
+        to {
+          transform: translateY(0);
+          
+        }
+      }
+    
+       nav .navbar.active {
+        left: 0;
+        display: flex;
+        flex-direction: column;
+    
+       
+        
+        
+       }
+    
+       nav ul li{
+        font-size: xx-large;
+        margin-bottom: 50px;
+        margin-top: 25px;
+        margin-left: 10%;
+       }
+
+       #ana-1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+    #ana-1 div{
+        width: 100%;
+        /* border: none; */
+    }
+
+    #ana-1 .yazı{
+        padding: 0;
+        padding-left: 7px;
+        padding-right: 7px;
+        text-align: center;
+    }
+
+   
+
+    #ana-1 img{
+        width: 580px;
+        height: 360px;
+        /* padding-right: 25px; */
+        border: none;
+        padding-left: 7%;
+        padding-right: 25%;
+        
+    }
+
+    .grid-2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding-top: 30px;
+       }
+    
+    .grid-2 h3{
+        font-size: xx-large;
+       }
+
+    .grid-2 span{
+        font-size: x-large;
+       }
+}
+
+
+
+@media (width:280px){
+
+    footer img{
+        margin-left: 40px;
+        width: 210px;
+    }
+}
+
+@media (width:820px){
+
+    footer{
+        padding-bottom: 55px;
+    }
+
+    .footer-image{
+        padding-top: 25px;
+    }
+
+    nav img{
+        padding-left: 20px;
+     }
+
+    footer img{
+        
+        margin-left: 28%;
+        
+    }
+
+    #ana-2 p{
+        
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #ana-3{
+        width: 100%;
+       }
+
+    #ana-3 .grid{
+        grid-template-columns: repeat(2,auto);
+        padding: 0;
+        gap: 25px;
+    }
+
+    #ana-3 h1{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .hamburger{
+        display: block;
+        margin-left: auto;
+        font-size: xx-large;
+        margin-right: 7px;
+        margin-top: 5px;
+       }
+    
+       nav img{
+        margin:  0;
+       }
+    
+       
+    
+       nav ul{
+        display: none;
+        background-color: var(--bg-color);
+        border: 1px solid orangered;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        height: 90%;
+        margin: 0;
+        padding: 0;
+        animation: hamburger 0.26s ease-in-out ;
+       
+    
+        
+        
+       }
+    
+       @keyframes hamburger {
+        from {
+          transform: translateY(-100%);
+          
+        }
+        to {
+          transform: translateY(0);
+          
+        }
+      }
+    
+       nav .navbar.active {
+        left: 0;
+        display: flex;
+        flex-direction: column;
+    
+       
+        
+        
+       }
+    
+       nav ul li{
+        font-size: larger;
+        margin-bottom: 50px;
+        margin-top: 25px;
+        margin-left: 10%;
+       }
+
+       nav ul li{
+        font-size: xx-large;
+       }
+
+       #ana-1{
+        width: 100%;
+        
+        
+    }
+
+    #ana-1 div{
+        width: 100%;
+        /* border: none; */
+    }
+
+    #ana-1 .yazı{
+        padding: 0;
+        padding-left: 7px;
+        padding-right: 7px;
+        text-align: center;
+    }
+
+   
+
+    #ana-1 img{
+        width: 310px;
+        height: 350px;
+        /* padding-right: 25px; */
+        border: none;
+        padding-right: 25%;
+        
+    }
+
+    .grid-2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding-top: 30px;
+       }
+    
+    .grid-2 h3{
+        font-size: xx-large;
+       }
+
+    .grid-2 span{
+        font-size: x-large;
+       }
+
+}
+
+@media (width:912px){
+    footer img{
+        
+        margin-left: 30%;
+        
+    }
+
+    #ana-2 p{
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+    #ana-3{
+        width: 100%;
+    }
+
+    #ana-3 .grid{
+        grid-template-columns: repeat(2,auto);
+        padding: 0;
+        gap: 25px;
+    } 
+
+    nav img{
+        padding-left: 25px;
+     }  
+
+       
+     .hamburger{
+        display: block;
+        margin-left: auto;
+        font-size: xx-large;
+        margin-right: 7px;
+        margin-top: 5px;
+       }
+    
+       nav img{
+        margin:  0;
+       }
+    
+       
+    
+       nav ul{
+        display: none;
+        background-color: var(--bg-color);
+        border: 1px solid orangered;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        height: 75%;
+        margin: 0;
+        padding: 0;
+        animation: hamburger 0.26s ease-in-out ;
+       
+    
+        
+        
+       }
+    
+     @keyframes hamburger {
+        from {
+          transform: translateY(-100%);
+          
+        }
+        to {
+          transform: translateY(0);
+          
+        }
+      }
+    
+    nav .navbar.active {
+        left: 0;
+        display: flex;
+        flex-direction: column;
+     
+    }
+
+    nav ul li{
+        font-size: xx-large;
+        margin-bottom: 50px;
+        margin-top: 25px;
+        margin-left: 7%;
+    }
+
+    #ana-1{
+        width: 100%;
+        
+        
+        
+    }
+
+    #ana-1 div{
+        width: 100%;
+        /* border: none; */
+    }
+
+    #ana-1 .yazı{
+        padding: 0;
+        padding-left: 7px;
+        padding-right: 7px;
+        text-align: center;
+    }
+
+   
+
+    #ana-1 img{
+        width: 410px;
+        height: 350px;
+        /* padding-right: 25px; */
+        border: none;
+        padding-right: 25%;
+        
+    }
+
+    .grid-2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding-top: 30px;
+       }
+    
+    .grid-2 h3{
+        font-size: xx-large;
+       }
+
+    .grid-2 span{
+        font-size: x-large;
+       }
+
+    
+
+
+}
+
+
+
+@media (min-width:1200px){
+
+    footer img{
+        margin: 0;
+        margin-left: 35%;
+    }
+}
+
+
+
+
+@media (width:1024px){
+    
+    #ana-1{
+        width: 100%;
+        
+    }
+
+    #ana-1 div{
+        width: 100%;
+        /* border: none; */
+    }
+
+    #ana-1 .yazı{
+        padding: 0;
+        padding-left: 7px;
+        padding-right: 7px;
+        text-align: center;
+    }
+
+   
+
+    #ana-1 img{
+        width: 385px;
+        height: 345px;
+        /* padding-right: 25px; */
+        border: none;
+        padding-right: 25%;
+        
+    }
+
+    footer img{
+        margin-left: 33%;
+    }
+
+    #ana-3{
+        width: 100%;
+       }
+
+    #ana-3 .grid{
+        grid-template-columns: repeat(2,auto);
+        padding: 0;
+        gap: 25px;
+    }  
+    
+
+    .hamburger{
+        display: block;
+        margin-left: auto;
+        font-size: xx-large;
+        margin-right: 7px;
+        margin-top: 5px;
+       }
+    
+       nav img{
+        margin:  0;
+       }
+    
+       
+    
+       nav ul{
+        display: none;
+        background-color: var(--bg-color);
+        border: 1px solid orangered;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        height: 90%;
+        margin: 0;
+        padding: 0;
+        animation: hamburger 0.26s ease-in-out ;
+       
+    
+        
+        
+       }
+    
+     @keyframes hamburger {
+        from {
+          transform: translateY(-100%);
+          
+        }
+        to {
+          transform: translateY(0);
+          
+        }
+      }
+    
+    nav .navbar.active {
+        left: 0;
+        display: flex;
+        flex-direction: column;
+     
+    }
+
+    nav ul li{
+        font-size: xx-large;
+        margin-bottom: 50px;
+        margin-top: 25px;
+        margin-left: 7%;
+    }
+
+    nav img{
+        margin-left: 30px;
+    }
+}
+
+@media (width:1024px){
+    #ana-3{
+        width: 100%;
+       }
+
+     nav img{
+        padding-left: 25px;
+     }  
+
+       
+     .hamburger{
+        display: block;
+        margin-left: auto;
+        font-size: xx-large;
+        margin-right: 7px;
+        margin-top: 5px;
+       }
+    
+       nav img{
+        margin:  0;
+       }
+    
+       
+    
+       nav ul{
+        display: none;
+        background-color: var(--bg-color);
+        border: 1px solid orangered;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        height: 75%;
+        margin: 0;
+        padding: 0;
+        animation: hamburger 0.26s ease-in-out ;
+       
+    
+        
+        
+       }
+    
+     @keyframes hamburger {
+        from {
+          transform: translateY(-100%);
+          
+        }
+        to {
+          transform: translateY(0);
+          
+        }
+      }
+    
+    nav .navbar.active {
+        left: 0;
+        display: flex;
+        flex-direction: column;
+     
+    }
+
+    nav ul li{
+        font-size: xx-large;
+        margin-bottom: 50px;
+        margin-top: 25px;
+        margin-left: 7%;
+    }
+
+}
+
+@media (width:1280px){
+    #ana-3{
+        width: 100%;
+       }
+
+       #ana-3 .grid{
+        grid-template-columns: repeat(2,auto);
+        gap: 25px;
+    } 
+
+    nav img{
+        padding-left: 25px;
+     }  
+
+       
+     .hamburger{
+        display: block;
+        margin-left: auto;
+        font-size: xx-large;
+        margin-right: 7px;
+        margin-top: 5px;
+       }
+    
+       nav img{
+        margin:  0;
+       }
+    
+       
+    
+       nav ul{
+        display: none;
+        background-color: var(--bg-color);
+        border: 1px solid orangered;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        height: 93%;
+        margin: 0;
+        padding: 0;
+        animation: hamburger 0.26s ease-in-out ;
+       
+    
+        
+        
+       }
+    
+     @keyframes hamburger {
+        from {
+          transform: translateY(-100%);
+          
+        }
+        to {
+          transform: translateY(0);
+          
+        }
+      }
+    
+    nav .navbar.active {
+        left: 0;
+        display: flex;
+        flex-direction: column;
+     
+    }
+
+    nav ul li{
+        font-size: xx-large;
+        margin-bottom: 50px;
+        margin-top: 25px;
+        margin-left: 7%;
+    }
+}
